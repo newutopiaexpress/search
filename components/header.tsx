@@ -20,7 +20,8 @@ export const Header: React.FC = async () => {
           <UtopiaIcon/>
         </a>
       </div>
-      <div className="w-6 h-6 rounded-full shadow-xl">
+
+      <div className="flex gap-0.5">
         <SignedIn>
           {/* Mount the UserButton component */}
           <UserButton />
@@ -28,10 +29,6 @@ export const Header: React.FC = async () => {
         <SignedOut>
           {/*<RedirectToSignIn />*/}
         </SignedOut>
-      </div>
-
-      <div className="flex gap-0.5">
-        <ModeToggle />
         <HistoryContainer location="header" />
       </div>
     </header>
