@@ -9,6 +9,7 @@ import {
   SignedOut,
   SignInButton,
   UserButton,
+  RedirectToSignIn,
 } from '@clerk/nextjs';
 
 export const Header: React.FC = async () => {
@@ -25,8 +26,7 @@ export const Header: React.FC = async () => {
           <UserButton />
         </SignedIn>
         <SignedOut>
-          {/* Signed out users get sign in button */}
-          <SignInButton/>
+          <RedirectToSignIn />
         </SignedOut>
       </div>
       <div className="flex gap-0.5">
