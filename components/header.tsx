@@ -22,13 +22,6 @@ export const Header: React.FC = async () => {
       </div>
 
       <div className="flex gap-0.5">
-        <SignedIn>
-          {/* Mount the UserButton component */}
-          <UserButton />
-        </SignedIn>
-        <SignedOut>
-          {/*<RedirectToSignIn />*/}
-        </SignedOut>
         <HistoryContainer location="header" />
       </div>
     </header>
