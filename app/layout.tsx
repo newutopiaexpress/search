@@ -7,7 +7,14 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { Sidebar } from '@/components/sidebar'
 import { Toaster } from '@/components/ui/sonner'
-import { ClerkProvider } from '@clerk/nextjs'
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+ RedirectToSignIn,
+} from '@clerk/nextjs'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -56,6 +63,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div>
+          <SignedIn>
+          {/* Mount the UserButton component */}
+          <UserButton />
+        </SignedIn>
+        <SignedOut>
+          <RedirectToSignIn />
+        </SignedOut>
+          </div>
           <Header />
           {children}
           <Sidebar />
