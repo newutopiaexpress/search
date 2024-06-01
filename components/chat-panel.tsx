@@ -102,7 +102,7 @@ export function ChatPanel({ messages }: ChatPanelProps) {
             placeholder="What should I look up for you?"
             spellCheck={false}
             value={input}
-            className="transition-all shadow-xl hover:shadow-lg hover:shadow-indigo-900/30 shadow-indigo-900/20 resize-none w-full min-h-14 rounded-fill bg-muted border border-input pl-4 pr-10 pt-4 pb-1 text-sm ring-offset-2 ring-offset-background ring-4 ring-slate-100/40 hover:ring-slate-100 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'"
+            className="transition-all shadow-lg hover:shadow-lg hover:shadow-indigo-900/35 shadow-neutral-900/20 resize-none w-full min-h-14 rounded-fill bg-white border border-input pl-4 pr-10 pt-4 pb-1 text-sm  ring-4 ring-slate-100/40 hover:ring-slate-100 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'"
             onChange={e => {
               setInput(e.target.value)
               setShowEmptyScreen(e.target.value.length === 0)
@@ -158,7 +158,7 @@ export function ChatPanel({ messages }: ChatPanelProps) {
           submitMessage={message => {
             setInput(message)
           }}
-          className={cn(showEmptyScreen ? 'visible' : 'invisible')}
+          className={cn(showEmptyScreen ? 'visible' : 'visible')}
         />
       </form>
     </div>

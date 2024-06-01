@@ -14,9 +14,9 @@ const fontSans = FontSans({
   variable: '--font-sans'
 })
 
-const title = 'Morphic'
+const title = 'Utopia Express Researcher'
 const description =
-  'A fully open-source AI-powered answer engine with a generative UI.'
+  'AI-powered answer engine'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://search.utopia.express'),
@@ -48,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn('font-sans antialiased bg-gradient-to-r from-stone-200 to-rose-100', fontSans.variable)}>
+      <body className={cn('font-sans antialiased bg-gradient-to-r from-sky-50 to-rose-50', fontSans.variable)}>
       <ClerkProvider>
         <ThemeProvider
           attribute="class"

@@ -23,6 +23,7 @@ import { CopilotDisplay } from '@/components/copilot-display'
 import RetrieveSection from '@/components/retrieve-section'
 import { VideoSearchSection } from '@/components/video-search-section'
 
+
 async function submit(formData?: FormData, skip?: boolean) {
   'use server'
 
