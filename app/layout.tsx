@@ -23,7 +23,7 @@ const fontSans = FontSans({
 
 const title = 'Utopia Express Researcher'
 const description =
-  'AI-powered answer engine'
+  'AI-powered research engine'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://search.utopia.express'),
@@ -55,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn('font-sans antialiased bg-gradient-to-r from-sky-50 to-rose-50', fontSans.variable)}>
+      <body className={cn('font-sans antialiased bg-gradient-to-r from-sky-50 to-rose-50 dark:bg-gradient-to-r dark:from-stone-800 dark:to-neutral-800 dark:text-stone-300', fontSans.variable)}>
       <ClerkProvider>
         <ThemeProvider
           attribute="class"
@@ -63,15 +63,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div>
-          <SignedIn>
-          {/* Mount the UserButton component */}
-          <UserButton />
-        </SignedIn>
-        <SignedOut>
-          <RedirectToSignIn />
-        </SignedOut>
-          </div>
+          
+
+          <SignedOut>
+            <RedirectToSignIn />
+          </SignedOut>
+          
           <Header />
           {children}
           <Sidebar />
