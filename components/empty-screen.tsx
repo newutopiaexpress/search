@@ -3,21 +3,17 @@ import { ArrowRight } from 'lucide-react'
 
 const exampleMessages = [
   {
-    heading: "Collect info, and write a blogbost about technological singularity",
-    message: "Collect info, and write a blogbost about technological singularity"
+    heading: "Collect information about technological singularity",
+    message: "What is technological singularity, and how does it affect the future of humanity?"
   },
   {
-    heading: 'Why is Nvidia growing rapidly?',
-    message: 'Why is Nvidia growing rapidly?'
+    heading: 'Summarize this video for a blog post',
+    message: 'Summarize this video for a blog post'
   },
   {
-    heading: 'Summarize this video ',
-    message: 'Summarize this video'
+    heading: 'Im looking for a black shirt with skull pattern',
+    message: 'black shirt with skull pattern'
   },
-  {
-    heading: 'Summ',
-    message: 'Tesla vs Rivian'
-  }
 ]
 export function EmptyScreen({
   submitMessage,
