@@ -16,7 +16,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 export const Header: React.FC = async () => {
   return (
     <header className="fixed w-full p-1 md:p-2 flex justify-between items-center z-10 backdrop-blur md:backdrop-blur-none bg-background/80 md:bg-transparent">
-      <div className="relative">
+      <div className="relative w-full">
         <div className='opacity-85 hover:opacity-100 mt-2 ml-2 md:mt-4 md:ml-4'>
           <a href="/">
             <UtopiaIcon/>
