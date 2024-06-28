@@ -18,9 +18,7 @@ const Footer: React.FC = () => {
           size={'icon'}
           className="text-muted-foreground/50 rounded-full hover:shadow-lg"
         >
-          <Link href="https://git.new/morphic" target="_blank">
-            <SiGithub size={18} />
-          </Link>
+          
         </Button>
       </div>
 
