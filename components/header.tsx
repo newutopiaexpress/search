@@ -13,15 +13,27 @@ import {
 } from '@clerk/nextjs';
 import { ThemeProvider } from '@/components/theme-provider'
 
+import Link from 'next/link'
+
 export const Header: React.FC = async () => {
   return (
     <header className="fixed w-full p-1 md:p-2 flex justify-between items-center z-10 backdrop-blur md:backdrop-blur-none bg-background/80 md:bg-transparent">
       <div className="relative w-full">
+
         <div className='opacity-85 hover:opacity-100 mt-2 ml-2 md:mt-4 md:ml-4'>
           <a href="/">
             <UtopiaIcon/>
           </a>
         </div>
+
+        
+        <div className="flex items-center justify-center maw-w-[400px] relative">
+            <div className="w-96 absolute -top-5">
+              <Link href="https://buy.stripe.com/cN26sl4B3eBu4Fy00g" target="_blank" className="text-stone-400 hover:text-stone-700 visited:hidden text-xs">
+                  Invite me for a coffee, so I can keep this project going ☕️
+              </Link>
+            </div>
+          </div>
 
         <div className="absolute right-4 top-4">
               <SignedIn>
