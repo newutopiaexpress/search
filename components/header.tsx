@@ -27,10 +27,10 @@ export const Header: React.FC = async () => {
         </div>
 
         
-        <div className="flex items-center justify-center maw-w-[400px] relative">
+        <div className="flex items-center justify-center maw-w-[430px] relative">
             <div className="w-96 absolute -top-5">
               <Link href="https://buy.stripe.com/cN26sl4B3eBu4Fy00g" target="_blank" className="text-stone-400 hover:text-stone-700 visited:hidden text-xs">
-              If you can, invite me for a coffee so I can maintain this free service. Thank you very much! ☕️
+              Invite me for a coffee so I can maintain this free service ☕️
               </Link>
             </div>
           </div>
