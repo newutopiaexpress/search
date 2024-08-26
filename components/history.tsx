@@ -21,6 +21,7 @@ export function History({ location }: HistoryProps) {
   return (
     <Sheet>
       <SheetTrigger asChild>
+        {/*
         <Button
           variant="ghost"
           size="icon"
@@ -30,6 +31,8 @@ export function History({ location }: HistoryProps) {
         >
           {location === 'header' ? <Menu /> : <HistoryIcon/>}
         </Button>
+        */}
+        
       </SheetTrigger>
       <SheetContent className="w-64 rounded-tl-xl rounded-bl-xl">
         <SheetHeader>
