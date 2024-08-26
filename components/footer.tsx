@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
 
       <div className="flex justify-end mr-2">
         <Link href="https://buy.stripe.com/cN26sl4B3eBu4Fy00g" target="_blank" className="text-stone-400 hover:text-stone-700 visited:hidden text-sm">
-        Invite me for a <span className="text-lg">☕️</span>
+        Invite me for a <span className="text-xl">🍺</span>
         </Link>
       </div>
 
