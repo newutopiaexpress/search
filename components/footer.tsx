@@ -12,14 +12,10 @@ const Footer: React.FC = () => {
         <ModeToggle />
       </div>
 
-      <div className="flex justify-end">
-        <Button
-          variant={'ghost'}
-          size={'icon'}
-          className="text-muted-foreground/50 rounded-full hover:shadow-lg"
-        >
-          
-        </Button>
+      <div className="flex justify-end mr-2">
+        <Link href="https://buy.stripe.com/cN26sl4B3eBu4Fy00g" target="_blank" className="text-stone-400 hover:text-stone-700 visited:hidden text-sm">
+        Invite me for a <span className="text-lg">☕️</span>
+        </Link>
       </div>
 
 

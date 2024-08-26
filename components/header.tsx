@@ -24,16 +24,7 @@ export const Header: React.FC = async () => {
           <a href="/">
             <UtopiaIcon/>
           </a>
-        </div>
-
-        
-        <div className="flex items-center justify-center maw-w-[430px] relative">
-            <div className="w-96 absolute -top-5">
-              <Link href="https://buy.stripe.com/cN26sl4B3eBu4Fy00g" target="_blank" className="text-stone-400 hover:text-stone-700 visited:hidden text-xs">
-              Invite me for a coffee so I can maintain this free service ☕️
-              </Link>
-            </div>
-          </div>
+        </div>     
 
         <div className="absolute right-4 top-4">
               <SignedIn>
@@ -43,7 +34,7 @@ export const Header: React.FC = async () => {
         </div>
 
         <div className="flex gap-0.5">
-          <HistoryContainer location="header" />
+          {/*<HistoryContainer location="header" />*/}
         </div>
       </div>
     </header>
