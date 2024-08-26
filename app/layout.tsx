@@ -14,7 +14,8 @@ import {
   SignInButton,
   UserButton,
  RedirectToSignIn,
-} from '@clerk/nextjs'
+} from '@clerk/nextjs';
+import { Analytics } from "@vercel/analytics/react"
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -76,6 +77,7 @@ export default function RootLayout({
           <Toaster />
         </ThemeProvider>
       </ClerkProvider>
+      <Analytics/>
       </body>
     </html>
   )
